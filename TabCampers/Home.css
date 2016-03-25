@@ -1,0 +1,40 @@
+﻿html { 
+  background: url(images/photo6.jpg) no-repeat center center fixed; 
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+#logo{
+   height: 25%;
+   width: 25%;
+}
+
+/* tab color */
+.nav-pills>li>a {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  background-color: #BF1E2E; 
+  border-color: #777777;
+  color: white;
+  width: 120px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+/* hover tab color */
+.nav-pills>li>a:hover {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+  border-color: #BF1E2E;
+  background-color: #fff;
+  color:  #BF1E2E;
+  width: 120px;
+  margin-right: 0px;
+  margin-left: 0px;
+}
+
+li {
+    margin-right: 0px; 
+}
