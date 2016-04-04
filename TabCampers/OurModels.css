@@ -1,11 +1,11 @@
 ﻿body {
-    background: url(images/photo6.jpg) no-repeat center center fixed;
+    background: url(images/photo4.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
     background-size: cover;
 }
-
+/*top left logo*/
 #logo {
     height: 25%;
     width: 25%;
@@ -34,7 +34,7 @@
     width: 120px;
 }
 
-li, a {
+li, a { /*adjust the nav pills spacing*/
     text-align: center;
     padding-right: 0px;
     width: 120px;
@@ -44,33 +44,42 @@ li, a {
     margin-left: 10px;
 }
 
-
-#top, #middle, #bottom {
+#title {
+    text-shadow: 7px 7px 10px #BF1E2E;
     color: white;
     font-family: 'Droid Sans', sans-serif;
     font-size: 60px;
     font-weight: bold;
-
+    text-align: center;
 }
 
-#sidetext{
-    margin-top: 70px;
+#description {
     text-shadow: 2px 2px 8px #BF1E2E;
-}
-#top{
-    padding-left: 60px;
-}
-#middle {
-    margin-top: 70px;
-    padding-left: 150px;
-}
-
-#bottom {
-    padding-left: 60px;
-    margin-top: 70px;
+    color: white;
+    margin-left: 100px;
+    margin-right: 100px;
+    font-family: 'Droid Sans', sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
 }
 
+#first, #second {
+    width: 50%;
+    background-color: #90918C;
+    padding: 0px;
+}
 
+table, .col-md-6 {
+    padding: 0px;
+}
+
+.table {
+    width: 500px;
+    text-align: center;
+    font-weight:bold; 
+    border: solid 4px white;
+}
 #slideshow {
     max-height: 400px;
     max-width: 700px;
@@ -80,10 +89,42 @@ li, a {
     margin: 0;
 }
 
+#left {
+    text-align: left; 
+}
 #slideshow li {
-    padding-left: 100px;
+    padding-right: 200px;
 }
 
 #slideshow img {
     border-radius: 25px;
+}
+
+#slideshow2 {
+    max-height: 400px;
+    max-width: 700px;
+    overflow: hidden; 
+    list-style: none; 
+    padding: 0; 
+    margin: 0;
+}
+
+#slideshow2 li {
+    padding-left: 100px;
+}
+
+#slideshow2 img {
+    border-radius: 25px;
+}
+
+#first {
+    margin-left: 100px;
+}
+
+#second {
+    margin-left: 70px;
+}
+#toptable {
+    padding-left: 100px;
+    padding-right: 100px;
 }
