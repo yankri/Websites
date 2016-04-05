@@ -1,10 +1,21 @@
 ﻿body {
-    background-color: #7ED7F9;
+    background-color: #ABE7FF;
     font-family: 'Indie Flower', cursive;
+}
+.row {
+    margin-left: 50px;
+}
+.container {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#sun {
+    float: left;
 }
 #header ul, h1{
     list-style: none;
-    display: inline-block;
+    display: block;
     color: maroon;
     font-weight: bold;
     font-size: 80px;
@@ -15,7 +26,13 @@
     margin-right: auto;
     display: inline-block;
 }
-
+#header a img {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+h2 {
+    margin-top: 0;
+}
 .radio {
     color: maroon;
 }
@@ -29,4 +46,35 @@
     color: maroon;
     font-weight: bold;
     list-style: none;
+}
+
+#formtitle {
+    color: maroon;
+    font-weight: bold;
+    font-size: 40px;
+    margin-top: 0;
+    text-align: center;
+}
+
+label {
+    color: maroon;
+    font-size: 20px;
+}
+
+#radios {
+    text-align: center;
+}
+
+.form-control {
+    color: black;
+    font-size: 20px;
+}
+
+.btn {
+    color: white;
+    background-color: maroon;
+    padding: 6px 20px;
+}
+.btn:hover {
+    color: white;
 }

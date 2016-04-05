@@ -9,75 +9,96 @@
 </head>
 
 <body>
-    <ul id="header">
-        <li><img src="images/sun.png" alt="sun in cloud" /></li>
-        <li><h1>WEATHERGHAN.com</h1></li>
-        <li>
-            <a href="HomePage.html"><img src="images/Home.png" height="150" width="125"/></a>
-            <a href="Gallery.html"><img src="images/gallery.png" height="150" width="125"/></a>
-            <a href="Patterns.html"><img src="images/patterns.png" height="150" width="125"/></a>
-            <a href="Contact.html"><img src="images/contact.png" height="150" width="125"/></a>
-        </li>
-    </ul>
+    <div class="row">
+        <div class="col-md-3 pull-left">
+            <img src="images/sun.png" alt="sun in cloud" id="sun" />
+        </div>
+        <div class="col-md-6 col-md-offset-1">
+            <h1>WEATHERGHAN.com</h1>
 
-    <div class="col-md-6">
-        <h2 id="FAQhead">FAQ:</h2>
-        <section>
-            <ul id="FAQ">
+            <ul id="header">
                 <li>
-                    <h4>What's a "weatherghan"?</h4>
-                    <p>A weatherghan is a crocheted or knit blanket where each row represents a day in a specified year. The color used for each row is dependent on the weather for each day for a given location. For example, if it is 89 degrees F or above, the row would be red.</p>
+                    <a href="HomePage.html"><img src="images/Home.png" height="150" width="125" /></a>
                 </li>
                 <li>
-                    <h4>Where does your weather data come from?</h4>
-                    <p>Our weather data comes from the weather data records kept at major airports. The data is obtained through www.wunderground.com.</p>
+                    <a href="Gallery.html"><img src="images/gallery.png" height="150" width="125" /></a>
                 </li>
                 <li>
-                    <h4>Will you make me an afghan? I don't want to do it myself.</h4>
-                    <p>Use the contact form if you would rather buy an afghan than make it yourself.</p>
+                    <a href="Patterns.html"><img src="images/patterns.png" height="150" width="125" /></a>
                 </li>
                 <li>
-                    <h4>What pattern should I use?</h4>
-                    <p>Check out the patterns section located here to get some ideas.</p>
+                    <a href="Contact.html"><img src="images/contact.png" height="150" width="125" /></a>
                 </li>
             </ul>
-        </section>
+        </div>
     </div>
+    <div class="container">
+        <div class="col-md-6">
+            <h2 id="FAQhead">FAQ:</h2>
+            <section>
+                <ul id="FAQ">
+                    <li>
+                        <h4>What's a "weatherghan"?</h4>
+                        <p>A weatherghan is a crocheted or knit blanket where each row represents a day in a specified year. The color used for each row is dependent on the weather for each day for a given location. For example, if it is 89 degrees F or above, the row would be red.</p>
+                    </li>
+                    <li>
+                        <h4>Where does your weather data come from?</h4>
+                        <p>Our weather data comes from the weather data records kept at major airports. The data is obtained through www.wunderground.com.</p>
+                    </li>
+                    <li>
+                        <h4>Will you make me an afghan? I don't want to do it myself.</h4>
+                        <p>Use the contact form if you would rather buy an afghan than make it yourself.</p>
+                    </li>
+                    <li>
+                        <h4>What pattern should I use?</h4>
+                        <p>Check out the patterns section located here to get some ideas.</p>
+                    </li>
+                </ul>
+            </section>
+        </div>
 
-    <div class="col-md-6">
-        <form>
-            <div class="form-group row">
-                <label for="inputZip" class="col-sm-2 form-control-label">Zip Code</label>
-                <div class="col-sm-10">
-                    <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
+        <div id="form" class="col-md-6">
+            <h1 id="formtitle">Get your afghan pattern!</h1>
+            <form>
+                <div class="form-group row">
+                    <label for="inputZip" class="col-sm-4 form-control-label" id="zip">Zip Code</label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="inputZip" placeholder="Zip Code">
+                    </div>
                 </div>
+                <div class="form-group row">
+                    <label for="selectYear" class="col-sm-4">Select a Year</label>
+                    <div class="col-sm-8">
+                        <select id="year" class="form-control">
+                            <option>1990</option>
+                            <option>1991</option>
+                            <option>1992</option>
+                            <option>1993</option>
+                        </select>
+                    </div>
+                </div>
+                <div id="radios" class="col-sm-12">
+                    <div class="radio-inline">
+                        <label id="temp">
+                            <input type="radio" name="selectScale" value="option1" checked>
+                            Max Temperature
+                        </label>
+                    </div>
+                    <div class="radio-inline">
+                        <label id="cloudcover">
+                            <input type="radio" name="selectScale" value="option2">
+                            Cloud Cover
+                        </label>
+                    </div>
+                </div>
+            </form>
+            <div class="col-sm-7 col-sm-offset-5 pull-right">
+                <input class="btn btn-lrg" type="submit" value="Submit">
             </div>
-            <div class="form-group">
-                <label for="selectYear">Select a Year</label>
-                <select id="year" class="form-control">
-                    <option>1990</option>
-                    <option>1991</option>
-                    <option>1992</option>
-                    <option>1993</option>
-                </select>
-            </div>
-            <div class="radio-inline">
-                <label>
-                    <input type="radio" name="selectScale" id="temp" value="option1" checked>
-                    Max Temperature
-                </label>
-            </div>
-            <div class="radio-inline">
-                <label>
-                    <input type="radio" name="selectScale" id="cloudcover" value="option2">
-                    Cloud Cover
-                </label>
-            </div>
-        </form>
-        <input class="btn btn-lrg" type="submit" value="Submit">
 
 
+
+        </div>
     </div>
-
 </body>
 </html>
