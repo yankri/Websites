@@ -92,6 +92,7 @@ table, .col-md-6 {
 #left {
     text-align: left; 
 }
+
 #slideshow li {
     padding-right: 200px;
 }
@@ -118,7 +119,7 @@ table, .col-md-6 {
 }
 
 #first {
-    margin-left: 100px;
+    margin-left: 120px;
 }
 
 #second {
