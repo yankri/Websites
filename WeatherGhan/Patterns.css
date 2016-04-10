@@ -1,0 +1,46 @@
+﻿body {
+    background-color: #ABE7FF;
+    font-family: 'Indie Flower', cursive;
+}
+.container {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+li {
+    list-style: none;
+}
+.row {
+    margin-left: 50px;
+}
+.container {
+    margin-top: 50px;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+#sun {
+    float: left;
+}
+#header ul, h1{
+    list-style: none;
+    display: block;
+    color: maroon;
+    font-weight: bold;
+    font-size: 80px;
+}
+#header li, h4 {
+    color: maroon;
+    font-weight: bold;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    display: inline-block;
+}
+#header a img {
+    margin-left: 10px;
+    margin-right: 5px;
+}
+
+#header img {
+    text-shadow: 10px 10px 5px #888888;
+}

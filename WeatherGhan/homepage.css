@@ -2,14 +2,18 @@
     background-color: #ABE7FF;
     font-family: 'Indie Flower', cursive;
 }
+.container-fluid {
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+li {
+    list-style: none;
+}
 .row {
     margin-left: 50px;
 }
-.container {
-    margin-top: 50px;
-    margin-right: 100px;
-    margin-left: 100px;
-}
+
 #sun {
     float: left;
 }
@@ -20,7 +24,9 @@
     font-weight: bold;
     font-size: 80px;
 }
-#header li {
+#header li, h4 {
+    color: maroon;
+    font-weight: bold;
     text-align: center;
     margin-left: auto;
     margin-right: auto;
@@ -28,8 +34,13 @@
 }
 #header a img {
     margin-left: 10px;
-    margin-right: 10px;
+    margin-right: 5px;
 }
+
+#header img {
+    text-shadow: 10px 10px 5px #888888;
+}
+
 h2 {
     margin-top: 0;
 }
@@ -46,6 +57,12 @@ h2 {
     color: maroon;
     font-weight: bold;
     list-style: none;
+}
+
+#FAQlist:before {
+    content: "\25b6";
+    margin-right: 10px;
+    color: maroon;
 }
 
 #formtitle {
@@ -77,4 +94,5 @@ label {
 }
 .btn:hover {
     color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.8);
 }

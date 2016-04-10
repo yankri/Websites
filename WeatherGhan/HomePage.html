@@ -11,11 +11,10 @@
 <body>
     <div class="row">
         <div class="col-md-3 pull-left">
-            <img src="images/sun.png" alt="sun in cloud" id="sun" />
+            <a href="HomePage.html"><img src="images/sun.png" alt="sun in cloud" id="sun" /></a>
         </div>
         <div class="col-md-6 col-md-offset-1">
             <h1>WEATHERGHAN.com</h1>
-
             <ul id="header">
                 <li>
                     <a href="HomePage.html"><img src="images/Home.png" height="150" width="125" /></a>
@@ -32,31 +31,8 @@
             </ul>
         </div>
     </div>
-    <div class="container">
-        <div class="col-md-6">
-            <h2 id="FAQhead">FAQ:</h2>
-            <section>
-                <ul id="FAQ">
-                    <li>
-                        <h4>What's a "weatherghan"?</h4>
-                        <p>A weatherghan is a crocheted or knit blanket where each row represents a day in a specified year. The color used for each row is dependent on the weather for each day for a given location. For example, if it is 89 degrees F or above, the row would be red.</p>
-                    </li>
-                    <li>
-                        <h4>Where does your weather data come from?</h4>
-                        <p>Our weather data comes from the weather data records kept at major airports. The data is obtained through www.wunderground.com.</p>
-                    </li>
-                    <li>
-                        <h4>Will you make me an afghan? I don't want to do it myself.</h4>
-                        <p>Use the contact form if you would rather buy an afghan than make it yourself.</p>
-                    </li>
-                    <li>
-                        <h4>What pattern should I use?</h4>
-                        <p>Check out the patterns section located here to get some ideas.</p>
-                    </li>
-                </ul>
-            </section>
-        </div>
 
+    <div class="container-fluid">
         <div id="form" class="col-md-6">
             <h1 id="formtitle">Get your afghan pattern!</h1>
             <form>
@@ -70,6 +46,7 @@
                     <label for="selectYear" class="col-sm-4">Select a Year</label>
                     <div class="col-sm-8">
                         <select id="year" class="form-control">
+                            <option>Select a Year</option>
                             <option>1990</option>
                             <option>1991</option>
                             <option>1992</option>
@@ -95,9 +72,25 @@
             <div class="col-sm-7 col-sm-offset-5 pull-right">
                 <input class="btn btn-lrg" type="submit" value="Submit">
             </div>
-
-
-
+        </div>
+        <div class="col-md-6">
+            <h2 id="FAQhead">FAQ:</h2>
+            <section>
+                <ul id="FAQ">
+                    <li id="FAQlist">
+                        <h4>What's a "weatherghan"?</h4>
+                        <p>A weatherghan is a crocheted or knit blanket where each row represents a day in a specified year. The color used for each row is dependent on the weather for each day for a given location. For example, if it is 89 degrees F or above, the row would be red.</p>
+                    </li>
+                    <li id="FAQlist">
+                        <h4>Where does your weather data come from?</h4>
+                        <p>Our weather data comes from the weather data records kept at major airports. The data is obtained through www.wunderground.com.</p>
+                    </li>
+                    <li id="FAQlist">
+                        <h4>What pattern should I use?</h4>
+                        <p>Check out the patterns section located here to get some ideas.</p>
+                    </li>
+                </ul>
+            </section>
         </div>
     </div>
 </body>
